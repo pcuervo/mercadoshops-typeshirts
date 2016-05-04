@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Mercado Shops</title>
+		<!-- Sets initial viewport load and disables zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- SEO -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<!-- Favicon - generated with http://www.favicomatic.com/ -->
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google font(s) -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<!-- Font awesome -->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Typekit -->
+		<script src="https://use.typekit.net/sam8xqs.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<header class="[ js-header ][ affix ]">
+			<div class="[ container ]">
+				<h1 class="[ logo-header ]">
+					<a href="index.html" class="[ block ]">
+						<div class="[ bg-image img-logo img-logo--light ][ inline-block align-middle ]"></div>
+						<h3 class="[ inline-block align-middle ][ color-light ][ no-margin ]">Super Sip</h3>
+					</a>
+				</h1>
+				<!-- desktop menu -->
+				<nav id="desktopnav" role="navigation" class="[ hidden-xs ][ pull-right ]">
+					<div class="[ menu-desktop ][ pull-right ]">
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides--small padding--top-bottom ]" type="button" data-toggle="dropdown">
+								<span class="[ icon--iconed icon-search ]"></span>Búsquedas
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="busqueda-tramites.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Trámites
+								</a>
+								<a href="busqueda-credenciales.html" class="[ flex ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Profesional Autorizado
+								</a>
+								<a href="busqueda-permisos.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-search ]"></span>Búsqueda de Permisos
+								</a>
+								<a href="busqueda-multas.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-circle-cash ]"></span>Pagar Multas
+								</a>
+							</div>
+						</div>
+						<div class="[ inline-block ]">
+							<a href="mi-bandeja.html" class="[ color-light ][ topic-menu no-decoration ][ padding--sides--small padding--top-bottom ][ block ]">
+								<span class="[ icon--iconed icon-box-2 ]"></span>Mi Bandeja
+							</a>
+						</div>
+						<div class="[ dropdown ][ inline-block ]">
+							<button class="[ dropdown-toggle ][ padding--sides--small padding--top-bottom ]" type="button" data-toggle="dropdown">
+								<span class="[ icon--iconed icon-account-circle-1 ]"></span>Perfil
+								<span class="caret"></span>
+							</button>
+							<div class="[ dropdown-menu ]">
+								<a href="mi-perfil.html" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi Perfil
+								</a>
+								<a href="" class="[ block ][ padding--sides padding--top-bottom--small ][ no-margin ]">
+									<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+								</a>
+							</div>
+						</div>
+						<!-- Botones accesibilidad A+ a- -->
+						<div class="[ hidden-xs ][ inline-block ][ relative bottom-6 ]">
+							<button id="incfont" class="[ btn btn-secondary ][ margin-right--xsmall ]">A+</button>
+							<button id="decfont" class="[ btn btn-secondary padding--sides--medium ]">A-</button>
+						</div>
+					</div>
+				</nav>
+
+				<!-- mobile menu -->
+				<div id="mobilenav" role="navigation">
+					<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
+						<div id="js-btn-nav">
+								<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
+						</div>
+					</div>
+					<!-- mobile menu content -->
+					<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
+						<div id="js-hide-nav">
+							<span class="[ icon-close icon--iconed ][ color-secondary--dark ][ padding--top padding--right ][ block ][ pull-right ]"></span>
+						</div>
+						<div class="[ clearfix ]"></div>
+						<div class="[ menu-mobile ]">
+							<a href="mi-perfil.html">
+								<span class="[ icon--iconed icon-account-circle-1 ][ margin-right--small ]"></span>Mi perfil
+							</a>
+							<a href="mi-bandeja.html">
+								<span class="[ icon--iconed icon-box-2 ][ margin-right--small ]"></span>Mi Bandeja
+							</a>
+							<a href="busqueda-tramites.html">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Trámites
+							</a>
+							<a href="busqueda-credenciales.html" class="[ flex ]">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Profesional Autorizado
+							</a>
+							<a href="busqueda-permisos.html">
+								<span class="[ icon--iconed icon-search ][ margin-right--small ]"></span>Búsqueda de Permisos
+							</a>
+							<a href="busqueda-multas.html">
+								<span class="[ icon--iconed icon-circle-cash ][ margin-right--small ]"></span>Pagar Multas
+							</a>
+							<a href="salir">
+								<span class="[ icon--iconed icon-off ][ margin-right--small ]"></span>Logout
+							</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</header>
+
+		<div class="[ main ]">
+			<div class="[ size-transform clear-size ]">
+				<div class="[ marquee ]" data-duration="10000">
+					<p class="[ inline-block ]"><a href="">Aviso del director ejecutivo</a></p> <!-- pdf -->
+					<p class="[ inline-block ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<p class="[ inline-block ]">Aviso lorem ipsum dolor sit amet</p>
+					<p class="[ inline-block ]">Soluta laborum magni inventore cupiditate tempore ipsam aspernatur provident.</p>
+				</div>
+				<div class="[ container ]">
+					<section class="[ row ]">
+						<form role="form" class="[ col-xs-12 col-sm-6 ]">
+							<h2 class="[ text-center ]"> Buscar Trámites </h2>
+							<div class="[ input-group ][ input-search ]">
+								<input id="buscar_tramite" type="text" class="[ form-control ]" title="Busque su trámite super SIP" placeholder="Busque su trámite super SIP">
+								<span class="[ input-group-btn ]">
+									<button aria-labelledby="buscar_tramite" type="submit" class="[ btn btn-primary ]">
+										<span class="[ relative ][ icon-search icon-iconed ]"></span>
+									</button>
+								</span>
+							</div>
+						</form>
+						<article class="[ col-xs-12 col-sm-6 ]">
+							<h2 class="[ text-center ]"> Trámites Frecuentes </h2>
+							<a href="ficha-tramite.html"><p>PMO - Permiso de mantenimiento de obras de infraestructura pública</p></a>
+							<a href="ficha-tramite.html"><p>PCT - Permiso de corteza terrestre</p></a>
+							<a href="ficha-tramite.html"><p>PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</p></a>
+							<a href="ficha-tramite.html"><p>PEX - Permiso de exportación de materiales de la corteza terrestre</p></a>
+						</article>
+					</section>
+
+					<section class="[ row ]">
+						<div class="[ col-xs-12 ]">
+							<h2 class="[ text-center ][ margin-bottom--large ]">¿Cómo realizar su Trámite en línea con Super SIP?</h2>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
+							<span class="[ circle-proceso circle-pasos circle-complete ][ text--xlarge ][ margin-right--small ]">1</span>
+							<div class="[ inline-block align-middle ][ width-75 ]"><p>Encuentre el trámite que desea realizar en la lista.</p></div>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ][ margin-bottom ]">
+							<span class="[ circle-proceso circle-pasos circle-complete ][ text--xlarge ][ margin-right--small ]">2</span>
+							<div class="[ inline-block align-middle ][ width-75 ]"><p>Revise la ficha del trámite y los requerimientos.</p></div>
+						</div>
+						<div class="[ col-xs-12 col-sm-4 ]">
+							<span class="[ circle-proceso circle-pasos circle-complete ][ text--xlarge ][ margin-right--small ]">3</span>
+							<div class="[ inline-block align-middle ][ width-75 ]"><p>Cree una cuenta, complete su perfil e inicie su trámite.</p></div>
+						</div>
+					</section>
+					<section>
+						<h2 class="[ text-center ][ margin-bottom--large ]">Lista de Categorías Trámites super SIP</h2>
+						<div id="content">
+							<div class="[ box-content ]">
+								<div class="[ bg-acordion ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#consultas" aria-expanded="false"><h3 class="[ margin-top ]">Consultas</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Esta sección contiene las solicitudes de radicación para proyectos que requieran la presentación de una consulta de ubicación, construcción o consultas especiales.</p>
+									</div>
+									<div class="collapse" id="consultas">
+										<div class="[ bg-gray--xlighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pmo" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pmo">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pmo1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pmo1">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="[ margin-bottom ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#permisos" aria-expanded="false"><h3 class="[ margin-top ]">Permisos</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>En esta sección encontrará el formulario de radicación para el permiso que solicita, entre ellos Permisos PYMES, Permisos de Obra, Permisos Generales, Permiso de Extracción y Permisos Verdes. Solo pulse en el tipo de Permiso que desea radicar.</p>
+									</div>
+									<div class="collapse" id="permisos">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pex" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pex">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="[ margin-bottom ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#querellas" aria-expanded="false"><h3 class="[ margin-top ]">Querellas</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Denuncia presentada ante la Oficina del Inspector General de Permisos por agencias, dependencias o instrumentalidades del Gobierno de Puerto Rico, o personas privadas cuyo interés personal se vea afectado.</p>
+									</div>
+									<div class="collapse" id="querellas">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pct" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pct">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#recomendaciones" aria-expanded="false"><h3 class="[ margin-top ]">Recomendaciones y certificaciones</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Aquí encontrará las solicitudes a utilizar para radicar aquellas certificaciones que son parte del proceso para la evaluación en el otorgamiento de un permiso de uso o para obtener recomendaciones necesarias previa a solicitar un permiso de obra.</p>
+									</div>
+									<div class="collapse" id="recomendaciones">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pmo2" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pmo2">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="[ margin-bottom ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#transaccion" aria-expanded="false"><h3 class="[ margin-top ]">Transacciones administrativas</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Acceda aquí para solicitar algunos o varios de los siguientes trámites: Prórroga, Reapertura, Copias de Documentos.</p>
+									</div>
+									<div class="collapse" id="transaccion">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pex1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pex1">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="[ margin-bottom ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pymes" aria-expanded="false"><h3 class="[ margin-top ]">Permisos para pequeñas y medianas empresas (PYMES)</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>En esta sección encontrará el formulario de radicación para el permiso que solicita, entre ellos Permisos PYMES, Permisos de Obra, Permisos Generales, Permiso de Extracción y Permisos Verdes. Solo pulse en el tipo de Permiso que desea radicar.</p>
+									</div>
+									<div class="collapse" id="pymes">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pct1" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pct1">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#documentos" aria-expanded="false"><h3 class="[ margin-top ]">Documentos ambientales</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Solicitudes de Documentos Ambientales es el área en donde el ciudadano puede realizar los trámites vinculados a permisos medioambientales.</p>
+									</div>
+									<div class="collapse" id="documentos">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pmo7" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pmo7">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#revisiones" aria-expanded="false"><h3 class="[ margin-top ]">Revisiones administrativas</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Solicita revisiones o mociones sobre los permisos asignados.</p>
+									</div>
+									<div class="collapse" id="revisiones">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ]" data-toggle="collapse" data-target="#pex9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pex9">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="[ margin-bottom ]">
+									<button class="[ acordion collapsed ][ no-margin ]" data-toggle="collapse" data-target="#pa" aria-expanded="false"><h3 class="[ margin-top ]">Profesionales autorizados</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p>Aquí encontrará una compilación de solicitudes adicionales para radicar que no necesariamente estarán atadas a permisos de obras o permisos generales.</p>
+									</div>
+									<div class="collapse" id="pa">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ][ no-margin ]" data-toggle="collapse" data-target="#pct9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pct9">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="[ box-content ]">
+								<div class="">
+									<button class="[ acordion collapsed ]" data-toggle="collapse" data-target="#servicios" aria-expanded="false"><h3 class="[ margin-top ]">Otros servicios</h3></button>
+									<div class="[ bg-accordion ][ padding--sides padding--top--large padding--bottom ]">
+										<p></p>
+									</div>
+									<div class="collapse" id="servicios">
+										<div class="[ bg-gray-lighter ][ padding margin-bottom ]">
+											<button class="[ acordion collapsed ][ bg-gray-xlight ][ no-margin ]" data-toggle="collapse" data-target="#pmo9" aria-expanded="false"> PMO - Permiso de mantenimiento<br>de obras de infraestructura <br>pública  + </button>
+											<div class="[ collapse ]" id="pmo9">
+												<div class="[ padding margin-bottom ]">
+													<p><a href="ficha-tramite.html">PMO - Permiso de mantenimiento de obras de infraestructura pública</a></p>
+													<p><a href="ficha-tramite.html">PCT - Permiso de corteza terrestre</a></p>
+													<p><a href="ficha-tramite.html">PIE - Permiso de actividad incidental a una obra de infraestructura exenta de la aprobación de OGPe</a></p>
+													<p><a href="ficha-tramite.html">PEX - Permiso de exportación de materiales de la corteza terrestre</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="[ row ][ border-top-bottom--gray ][ padding--top-bottom--xlarge ]">
+						<div class="[ col-xs-12 col-sm-4 col-sm-offset-1 ]">
+							<p>Para Radicar Permiso de Uso bajo la Ley de Incentivos y Financiamiento para Jóvenes Empresarios (Ley 135):</p>
+							<p class="[ text-right ]"><a href="ficha-tramite.html">Presione aquí</a></p><!-- FICHE PUS -->
+						</div>
+						<div class="[ col-xs-12 col-sm-4 col-sm-offset-1 ]">
+							<p>Para Radicar la Renovación de Permisos de Generadores Eléctricos (JCA):</p>
+							<p class="[ text-right ]"><a href="pge-renovacion.html">Presione aquí</a></p>
+						</div>
+					</section>
+				</div> <!--/container-->
+			</div><!-- end size-transform -->
+			<footer>
+				<div class="[ footer--top ]">
+					<div class="[ container ]">
+						<div class="[ row ][ margin-bottom ][ text-center ]">
+							<a href="index.html" class="[ logo ][ block margin-bottom--small ][ no-decoration ]">
+								<div class="[ bg-image img-logo img-logo--black ][ inline-block align-middle ]"></div>
+								<h3 class="[ inline-block align-middle ][ no-margin ]">Super Sip</h3>
+							</a>
+							<h4 class="[ no-margin ]">Tu nuevo sistema de radicación de permisos</h4>
+						</div>
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-xsm-5 col-sm-6 col-md-7 col-lg-8 ]">
+								<div class="[ row ]">
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a class="[ block ]" href="acerca-ogpe.html"><span class="[ icon--iconed--small icon-info ]"></span> Acerca de ogpe</a>
+										<a class="[ block ]" href="contacto.html"><span class="[ icon--iconed--small icon-mail ]"></span> Contactános</a>
+										<a class="[ block ]" href="preguntas-frecuentes.html"><span class="[ icon--iconed--small icon-flag-empty ]"></span> Preguntas frecuentes</a>
+									</div>
+									<div class="[ col-sm-12 col-md-6 ][ margin-bottom ]">
+										<a href="http://ogpe.pr.gov/landing/?page_id=659" class="[ underline ][ block ]">Reglamentos vigentes</a>
+										<div class="[ bg-image logo--ogpe ]"></div>
+									</div>
+								</div>
+							</div>
+							<div class="[ col-xs-12 col-xsm-7 col-sm-6 col-md-5 col-lg-4 ][ text-contacto ]">
+								<h4 class="[ no-margin--top ]">Contactanos</h4>
+								<p>Oficina Central SJ</p>
+								<a href="tel:7877218282">787-721-8282</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Aguadilla</p>
+								<a href="tel:7877218282,16574;isub=16574">Ext. 16574,</a>
+								<a href="tel:7877218282,16523;isub=16523">16523, </a>
+								<a href="tel:7877218282,16540;isub=16540">16540</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Hatillo</p>
+								<a href="tel:7877218282,16513;isub=16513">Ext. 16513, </a>
+								<a href="tel:7877218282,16501;isub=16501">16501, </a>
+								<a href="tel:7877218282,19506;isub=19506">19506</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Humacao</p>
+								<a href="tel:7877218282,16550;isub=16550">Ext. 16550, </a>
+								<a href="tel:7877218282,16547;isub=16547">16547, </a>
+								<a href="tel:7877218282,19587;isub=19587">19587</a>
+								<div class="[ clear ]"></div>
+								<p>Oficina Ponce</p>
+								<a href="tel:7877218282,16574;isub=16574">Ext. 16574,</a>
+								<a href="tel:7877218282,16523;isub=16523">16523,</a>
+								<a href="tel:7877218282,19540;isub=19540">19540</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ footer--bottom ]">
+					<div class="[ container ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 ]">
+								<p class="[ color-light ]">Sometido a la Comisión Estatal de Elecciones: <a href="pdf/cee.pdf" target="_blank">CEE-SA-16-5641</a></p> <!-- pdf -->
+								<p class="[ color-light ][ margin-bottom--small ]">Reporta algún problema técnico <a href="https://ogpe.zendesk.com/hc/es/requests/new" target="_blank">aquí</a></p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 ][ text-alination ]">
+								<h4>Contacto</h4>
+								<a href="mailto:info@sip.pr.gov" class="[ block ][ link-secondary ][ no-margin ]"><span class="[ icon--iconed--small icon-mail ]"></span> info@sip.pr.gov</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div><!-- end main -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery.masonry.3.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script>
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				footerBottom();
+				actionButtons();
+				init_masonry();
+				$('.marquee').marquee();
+				/**
+				 * Triggered events
+				**/
+				$(window).resize(function () { footerBottom(); });
+				// change size of item
+				$('.box-content').on( 'shown.bs.collapse', function(e){
+					$('#content').masonry();
+				});
+				$('.box-content').on( 'hidden.bs.collapse', function(e){
+					$('#content').masonry();
+				});
+			});
+		</script>
+	</body>
+</html>

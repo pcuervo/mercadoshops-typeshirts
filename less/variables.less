@@ -5,9 +5,16 @@
 
 //== Colors
 //
+@primary: 		#FDD062; //yellow
+@secondary: 	#0D71BA; //blue
+@tertiary: 		#D0021B; //red
+
+@light: 		#fff; 
+@dark: 			#000;
+
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-base:              #000;
+@gray-base:              #5a5a5a;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
@@ -28,7 +35,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @dark;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -42,7 +49,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "proxima-nova", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -68,7 +75,7 @@
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
-@headings-color:          inherit;
+@headings-color:          @dark;
 
 
 //== Iconography
@@ -86,6 +93,10 @@
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@margin-base: 				20px;
+@margin-base-horizontal: 	12px;
+@margin-small-vertical:		5px;
 
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   12px;
@@ -105,6 +116,7 @@
 @border-radius-base:        4px;
 @border-radius-large:       6px;
 @border-radius-small:       3px;
+@border-radius-xlarge:      10px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -142,14 +154,14 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-@btn-font-weight:                normal;
+@btn-font-weight:                bold;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
 @btn-default-border:             #ccc;
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
+@btn-primary-color:              @dark;
+@btn-primary-bg:                 @primary;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
@@ -181,14 +193,14 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       #ECECEC;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   transparent;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius

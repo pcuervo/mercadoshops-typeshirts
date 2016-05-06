@@ -17,7 +17,7 @@
 }
 
 .shape-tag-red {
-    width: 80px;
+    width: 100px;
     height: 0px;
     border-left: 8px solid transparent;
     border-top: 10px solid @tertiary;
@@ -30,4 +30,19 @@
     border-left: 8px solid transparent;
     border-top: 10px solid @secondary;
     border-bottom: 10px solid @secondary;
+}
+
+.shape-circle {
+    width:1.2em;
+    height:1.2em;
+    background:@tertiary;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+
+.shape-tag-red > strong,
+.shape-tag-blue > strong {
+    position: absolute;
+    top: -10px;
 }

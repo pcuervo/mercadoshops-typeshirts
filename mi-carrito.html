@@ -55,34 +55,31 @@
 	<body>
 	 <header>
 		<!-- mobile menu -->
-		<div id="mobilenav" role="navigation">
-			<div class="[ visible-xs ][ pull-right ][ btn-nav ]">
-				<div id="js-btn-nav">
-						<span class="[ icon-menu-1 icon--iconed ][ color-light ]"></span>
-				</div>
-			</div>
+		<div class="[ visible-xs ]" id="mobilenav" role="navigation">
+			<span class="[ icon-menu-1 icon--iconed ][ color-light ][ js-btn-nav ]"></span>
+			<span class="[ icon-shopping-cart-4-2 icon--iconed ][ color-light ]"></span>
+
 			<!-- mobile menu content -->
-			<div class="[ js-hidden ][ nav-mobile right-767 ][ visible-xs ]">
-				<div id="js-hide-nav">
-					<span class="[ icon-close icon--iconed ][ color-secondary--dark ][ padding--top padding--right ][ block ][ pull-right ]"></span>
-				</div>
+			<div class="[ visible-xs ][ nav-mobile ][ js-nav-mobile ]">
+				<span class="[ js-hide-nav ][ icon-close icon--iconed ][ color-secondary--dark ][ padding--top padding--right ][ block ][ pull-right ]"></span>
 				<div class="[ clearfix ]"></div>
 				<div class="[ menu-mobile ]">
-					<div class="[ margin-left--large ][ inline-flex ][ hidden-xs ][ input-group ]">
+					<form class="[ inline-flex ][ input-group ]">
 						<input type="text" class="[ form-control ]" placeholder="buscar...">
 						<span class="[ input-group-btn ]">
 							<button class="[ btn btn-primary ]" type="button">
 							<span class="[ relative ][ icon-search ][ color-light ]"></span></button>
 						</span>
-					</div><!-- /input-group -->
+					</form><!-- /input-group -->
+					<a href="#jhjb">una categoría</a>
 
 				</div>
 			</div>
 		</div>
 
-	 	<div class="[ bg-dark ][ padding padding--bottom--large-xs ]">
+	 	<div class="[ bg-dark ][ padding padding--bottom--large-xs ][ hidden-xs ]">
 			
-			<div class="[ inline-block ][ hidden-xs ]">
+			<div class="[ inline-block ]">
 				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='index.html'>Inicio</a>
 				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='#'>Pago y Envío</a>
 				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="#">Contacto</a>
@@ -90,7 +87,7 @@
 				<span class="color-light icon-user"></span>		
 			</div>
 
-			<div class="[ margin-left--large ][ inline-flex ][ hidden-xs ][ input-group ]">
+			<div class="[ margin-left--large ][ inline-flex ][ input-group ]">
 				<input type="text" class="[ form-control ]" placeholder="buscar...">
 				<span class="[ input-group-btn ]">
 					<button class="[ btn btn-primary ]" type="button">
@@ -208,27 +205,45 @@
 	 </header>
 
 	 <div class="[ container ]">
+	 	<h2 class="[ text-center text-uppercase ][ margin-bottom ]"><strong>Mi Carrito</strong>	</h2>
 		<div class="[ row ]">
-			<div class="[ col-xs-12 col-sm-4 ]">
-				<img class="img-responsive" src="images/caslon.png" alt="">
-			</div>
-			<div class="[ col-xs-12 col-sm-6 ][ padding--large ]">
-				<div class="[ shape-tag-red color-light ]"><strong> -40% </strong></div>
-				<p class="[ lead ]">Caslón Font Weights</p>
-				<div>
-					<label>1 mes de $160 sin interes</label>
-					<label>Formas de pago</label>
-					<select name="" id="">
-						<option value="">Tarjetas de crédito</option>
-						<option value="">Tarjetas de crédito</option>
-						<option value="">Tarjetas de crédito</option>
-						<option value="">Tarjetas de crédito</option>
+			<div class="[ col-xs-12 ]">
+				<table class="table table-responsive">
+					<thead></thead>
+					<tr>
+						<td><img class="width-10" src="images/caslon.png" alt=""></td>
+						<td>
+							<div class="[ shape-circle ]">
+								<span class="[ icon-close ][ color-light ]"></span>
+								<p class="[ color-tertiary ]">Eliminar</p>
+							</div>
+						</td>
+						<td>Playera Caslon </td>
+						<td>Cantidad 
+							<select name="" id="">
+								<option value="">1</option>
+								<option value="">1</option>
+								<option value="">1</option>
+								<option value="">1</option>
+							</select>
+						</td> 
+						<td>$220</td>
+					</tr>
+					<tr>
+						<td><img class="width-10" src="images/caslon.png" alt=""></td>
+						<td>Playera Caslon </td> 
+						<td>Cantidad 
+							<select name="" id="">
+								<option value="">1</option>
+								<option value="">1</option>
+								<option value="">1</option>
+								<option value="">1</option>
 
-					</select>
-				</div>
-
-	 			<p><strong>$ 210</strong></p>
-	 			<button class="[ btn btn-primary shadow ]">COMPRAR</button>
+							</select>
+						</td> 
+						<td>$220</td>
+					</tr>
+				</table>
 				
 			</div>
 		</div>

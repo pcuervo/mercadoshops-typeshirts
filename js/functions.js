@@ -1,27 +1,3 @@
-
-//
-function menuCategories() {
-  
-  // Append the mobile icon nav
-  $('.nav-menu').append($('<div class="nav-mobile"></div>'));
-  
-  // Add a <span> to every .nav-item that has a <ul> inside
-  $('.nav-item').has('ul').prepend('<span class="nav-click"><i class="nav-arrow"></i></span>');
-  
-  // Click to reveal the nav
-  $('.nav-mobile').click(function(){
-    $('.nav-list').toggle();
-  });
-
-  // Dynamic binding to on 'click'
-  $('.nav-list').on('click', '.nav-click', function(){
-  
-    // Toggle the nested nav
-    $(this).siblings('.nav-submenu').toggle();
-    
-    // Toggle the arrow using CSS3 transforms
-    $(this).children('.nav-arrow').toggleClass('nav-rotate');
-    
-  });
-    
+function toggleClass(element, clase){
+    $(element).toggleClass(clase);
 }

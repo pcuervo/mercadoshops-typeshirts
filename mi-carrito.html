@@ -54,203 +54,171 @@
 	</head>
 	<body>
 	 <header>
-		<!-- mobile menu -->
-		<div class="[ visible-xs ]" id="mobilenav" role="navigation">
-			<span class="[ icon-menu-1 icon--iconed ][ color-light ][ js-btn-nav ]"></span>
-			<span class="[ icon-shopping-cart-4-2 icon--iconed ][ color-light ]"></span>
+	 	<div class="[ bg-dark ][ visible-xs ][ relative ]">
+	 		<button class="[ js-mobile-nav-opener ]"><span class="[ icon-menu-1 icon-small ][ color-light ]"></span></button>
+			<div class="[ mobile-nav ][ js-mobile-nav ][ width-100 ][ absolute ]">
+				<button class="[ js-mobile-nav-closer ]"><span class="[ icon-close ][ color-dark ]"></span></button>
+				<a class="[ text-center text-uppercase ][ pull-right ]" href='index.html'><i class="[ icon-shop icon-small ]"></i></a>
 
-			<!-- mobile menu content -->
-			<div class="[ visible-xs ][ nav-mobile ][ js-nav-mobile ]">
-				<span class="[ js-hide-nav ][ icon-close icon--iconed ][ color-secondary--dark ][ padding--top padding--right ][ block ][ pull-right ]"></span>
-				<div class="[ clearfix ]"></div>
-				<div class="[ menu-mobile ]">
-					<form class="[ inline-flex ][ input-group ]">
-						<input type="text" class="[ form-control ]" placeholder="buscar...">
-						<span class="[ input-group-btn ]">
-							<button class="[ btn btn-primary ]" type="button">
-							<span class="[ relative ][ icon-search ][ color-light ]"></span></button>
-						</span>
-					</form><!-- /input-group -->
-					<a href="#jhjb">una categoría</a>
+				<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]">
+					<input type="text" class="[ form-control ]" placeholder="buscar...">
+					<span class="[ input-group-btn ]">
+						<button class="[ btn btn-primary bg-dark ]" type="button">
+							<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
+						</button>
+					</span>
+				</form><!-- /search -->
+				
+				<nav class="[ text-bold ]">
 
-				</div>
+					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href='pago-envio.html'>Pago y Envío</a>
+					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href="contacto.html">Contacto</a>
+					<a class="[ text-center text-uppercase ][ block ][ padding ]" href='about.html'>Quiénes Somos</a>
+					<hr>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Tipos</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Hombres</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Mujeres</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Niños</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ][ border-bottom-primary-darken ]" href="categoria.html">Unisex</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Diseños</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello redondo</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello V</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga Larga</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga corta</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Thank top</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Lavados</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello redondo</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello V</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga Larga</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga corta</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Thank top</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Telas</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Jersey</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Triblend</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Algodon</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Felpa</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Pique</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Otros</a>
+						<div class="[ sub-menu ]">
+						</div>
+					</div>
+				</nav>
+
 			</div>
-		</div>
+			<a class="[ color-light ][ pull-right ]" href="mi-carrito.html"><span class="[ icon-shopping-cart-4-2 icon-small ]"></span></a>
+	 	</div>
 
+
+		<!-- TOP menu desktop  -->
 	 	<div class="[ bg-dark ][ padding padding--bottom--large-xs ][ hidden-xs ]">
 			
 			<div class="[ inline-block ]">
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='index.html'>Inicio</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='#'>Pago y Envío</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="#">Contacto</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="#">Quiénes Somos</a>	
-				<span class="color-light icon-user"></span>		
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='index.html' class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inicio">
+					<i class="[ icon-shop icon-medium ]"></i>
+				</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='pago-envio.html'>Pago y Envío</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="contacto.html">Contacto</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="about.html">Quiénes Somos</a>	
 			</div>
-
-			<div class="[ margin-left--large ][ inline-flex ][ input-group ]">
+			
+			<form class="[ inline-flex ][ input-group ][ center-block ][ margin-left--xlarge ]">
 				<input type="text" class="[ form-control ]" placeholder="buscar...">
 				<span class="[ input-group-btn ]">
 					<button class="[ btn btn-primary ]" type="button">
-					<span class="[ relative ][ icon-search ][ color-light ]"></span></button>
+						<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
+					</button>
 				</span>
-			</div><!-- /input-group -->
+			</form><!-- /search -->
+
+
 
 			<div class="[ pull-right ]">
-				<span class="[ icon-shopping-cart-4-2 ][ color-light ][ padding--bottom ]"></span>
-				<a class="[ text-uppercase ][ color-light ][ hidden-xs ]" href="mi-carrito.html">Mi carrito</a>	
+				<a class="[ text-uppercase ][ color-light ]" href="mi-carrito.html">
+					<span class="[ icon-shopping-cart-4-2  icon-medium  ][ aling-middle ]"></span>
+					<span class="[ padding-top ]">Mi Carrito </span>
+				</a>	
 			</div>
 
 	 	</div>
 		
 		<img class="[ img-responsive ][ center-block ][ padding--sides margin-top-bottom ]"src="images/logo.png" alt="">
 
-		<!-- /Categorias  -->
-		<div class="[ bg-dark ][ text-center ][ height-50 ][ hidden-xs ]">
-
-			<!-- Nav -->
-			<nav class="[ nav-menu ][ z-index--1 ]">
-				<ul class="[ nav-list ]">
-					<li class="[ nav-item ]">
-						<a href="index.html">Tipos</a>
-						<ul class="[ nav-submenu ]">
-							<li class="nav-submenu-item">
-								<a href="?=submenu-2">Mujer</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-1">Hombre</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-3">Niños</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a href="?=services">Estilos</a>
-						<ul class="nav-submenu">
-							<li class="nav-submenu-item">
-								<a href="?=submenu-1">Cuello redondo</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-2">cuello v</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-3">Manga larga</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-4">Manga corta</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-4">Sudadera</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a href="?=portfolio">Diseños</a>
-					</li>
-					<li class="nav-item">
-						<a href="?=portfolio">Lavados</a>
-						<ul class="nav-submenu">
-							<li class="nav-submenu-item">
-								<a href="?=submenu-1">Cuello redondo</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-2">cuello v</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-3">Manga larga</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-4">Manga corta</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-4">Sudadera</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a href="?=testimonials">Telas</a>
-						<ul class="nav-submenu">
-							<li class="nav-submenu-item">
-								<a href="?=submenu-1">Jersey</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-2">Tri blend</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-3">Felpa</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-4">Pique</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a href="?=contact">Otros</a>
-						<ul class="nav-submenu">
-							<li class="nav-submenu-item">
-								<a href="?=submenu-1">otros</a>
-							</li>
-							<li class="nav-submenu-item">
-								<a href="?=submenu-2">otros</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<!-- /Nav -->
-			
-		</div>
-		
-
 	 </header>
 
 	 <div class="[ container ]">
 	 	<h2 class="[ text-center text-uppercase ][ margin-bottom ]"><strong>Mi Carrito</strong>	</h2>
 		<div class="[ row ]">
-			<div class="[ col-xs-12 ]">
+			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
 				<table class="table table-responsive">
-					<thead></thead>
+
+					<img class="[ width-50 center-block ][ visible-xs ]" src="images/caslon.png" alt="playera caslon">	 				
+
+					<thead class="[ bg-primary ][ text-bold ][ color-dark ][ hidden-xs ]">
+						<td>Producto</td>
+						<td></td>
+						<td>Descripción</td>
+						<td>Cantidad</td>
+						<td>Precio</td>
+					</thead>
 					<tr>
-						<td><img class="width-10" src="images/caslon.png" alt=""></td>
+						<td class="[ hidden-xs ]">
+							<img class="width-10" src="images/caslon.png" alt="">
+						</td>
 						<td>
-							<div class="[ shape-circle ]">
-								<span class="[ icon-close ][ color-light ]"></span>
-								<p class="[ color-tertiary ]">Eliminar</p>
-							</div>
+							<span class="[ icon-cancel-cricle ][ color-tertiary ]"></span>
+							<span class="[ color-tertiary ]">Eliminar</span>
 						</td>
 						<td>Playera Caslon </td>
-						<td>Cantidad 
-							<select name="" id="">
+						<td> 
+							<select>
 								<option value="">1</option>
 								<option value="">1</option>
 								<option value="">1</option>
 								<option value="">1</option>
-							</select>
-						</td> 
-						<td>$220</td>
-					</tr>
-					<tr>
-						<td><img class="width-10" src="images/caslon.png" alt=""></td>
-						<td>Playera Caslon </td> 
-						<td>Cantidad 
-							<select name="" id="">
-								<option value="">1</option>
-								<option value="">1</option>
-								<option value="">1</option>
-								<option value="">1</option>
-
 							</select>
 						</td> 
 						<td>$220</td>
 					</tr>
 				</table>
+
 				
 			</div>
+
+			<div class="[ col-xs-12 col-sm-offset-6 col-sm-6 ][ text-center text-bold ]">
+				<h3 class="[ lead text-uppercase text-bold ] ">Total a pagar: $ 220.ºº</h3> 
+				<button class="[ btn btn-primary ][ padding--sides--xxlarge ][ margin-bottom ]">PAGAR</button>
+			</div>
+			<div class="[ col-xs-12 col-sm-offset-8 col-sm-4 ][ margin-bottom--large ]">
+				<div class="[ border-left-primary ][ padding--sides ]">
+					<i class="[ icon-shop icon-medium color-secondary ]"></i>
+					<a href=""><strong>seguir comprando</strong></a>
+				</div>
+			</div>
+
 		</div>
 	 	
 	 </div>
 
-	 
 
 	<footer class="[ bg-dark ][ padding--top-bottom--large  ]">
 		<div class="[ container ]">
@@ -285,15 +253,17 @@
 					<h4 class="[ color-primary ]]">CONTACTANOS</h4>
 					<p class="[ color-light ]">
 						Datos de contacto
-						Direccion
-						raul@pcuervo.com
-						Tel: 5543367589
+						<br>Direccion: Agrarismo 52, Col. Escandón, Miguel Hidalgo, D.F., México. 11800
+						<br>hello@pcuervo.com
+						<br>Tel: 5543367589
 					</p>
 				</div>
 				<div class="[ col-xs-12 col-sm-4 ]">
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Terminos y condiciones</h4></a>
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Politica de Devolucion</h4></a>
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Preguntas frecuentes</h4></a>
+					<div class="[ border-left-primary ][ margin-left padding ]">
+						<a class="[ margin-top-bottom ]" href="terminos.html"><h5 class="[ color-primary ]">Terminos y condiciones</h5></a>
+						<a class="[ margin-top-bottom ]" href="politicas.html"><h5 class="[ color-primary ]">Politica de Devolucion</h5></a>
+						<a class="[ margin-top-bottom ]" href="faq.html"><h5 class="[ color-primary ]">Preguntas frecuentes</h5></a>	
+					</div>
 				</div>
 			</div>
 			
@@ -306,6 +276,28 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.marquee/1.3.9/jquery.marquee.min.js"></script>
 	<script src="js/functions.js"></script>
+	<script>
+		$( document ).ready(function() {
+			/**
+			 * On ready
+			**/
+
+
+
+
+			/**
+			 * Triggered
+			**/
+			$('.js-mobile-nav-opener, .js-mobile-nav-closer').on('click', function(){
+			    toggleClass( '.mobile-nav', 'opened' );
+			});
+
+			$('.js-sub-menu-opener').on('click', function(){
+				var subMenu = $(this).parent().find('.sub-menu');
+			    toggleClass( subMenu, 'opened' );
+			})
+		});
+	</script>
 
 
 	</body>

@@ -7004,6 +7004,9 @@ button.close {
 .color-primary {
   color: #FDD062;
 }
+.color-dark {
+  color: #000;
+}
 .color-secondary {
   color: #0D71BA;
 }
@@ -7018,6 +7021,9 @@ button.close {
 }
 .bg-dark {
   background-color: #000;
+}
+.bg-primary {
+  background-color: #FDD062;
 }
 .bg-tertiary {
   background-color: #D0021B;
@@ -7206,6 +7212,10 @@ hr {
 .padding--sides--large {
   padding-left: 48px;
   padding-right: 48px;
+}
+.padding--sides--xxlarge {
+  padding-left: 96px;
+  padding-right: 96px;
 }
 .padding--sides--medium {
   padding-left: 17.765px;
@@ -7724,6 +7734,7 @@ hr {
 }
 .img-tag-red {
   background-image: url('images/etiqueta-roja.png');
+  width: 120px;
   height: 20px;
   padding: 0 20px;
 }
@@ -7760,8 +7771,8 @@ hr {
   border-bottom: 10px solid #0D71BA;
 }
 .shape-circle {
-  width: 1.2em;
-  height: 1.2em;
+  width: 1em;
+  height: 1em;
   background: #D0021B;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;

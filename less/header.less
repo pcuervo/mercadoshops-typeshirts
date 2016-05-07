@@ -10,9 +10,9 @@ header{
 
 header .navbar-nav > li:hover { background-color: @primary; }
 
-header .nav .open > a, 
-.nav .open > a:hover, 
-.nav .open > a:focus{ 
+header .nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus{
 	background-color: darken(@primary, 10%);
 }
 
@@ -22,7 +22,7 @@ header.navbar-nav > li > .dropdown-menu {
 
 header .navbar-nav > li > a {
 	color: @light;
-	&:hover{ color: @dark;} 
+	&:hover{ color: @dark;}
 }
 
 a.js-sub-menu-opener:hover,
@@ -53,7 +53,35 @@ a.js-sub-menu-opener:focus,{
 	max-height: 10000px;
 }
 
+//dropdown
 
+.dropdown--hover {
+	position: relative;
+	display: inline-block;
+	span {
+		text-transform: uppercase;
+	}
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: @dark;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	a {
+		color: @light;
+		padding: 12px 16px;
+		display: block;
+		cursor: pointer;
+		&:hover {
+			background-color: @primary;
+			color: @dark;
+		}
+	}
+}
+
+.dropdown--hover:hover .dropdown-content { display: block; }
 
 
 

@@ -34,7 +34,7 @@
 		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-		
+
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<!-- Google font(s) -->
@@ -55,70 +55,173 @@
 	<body>
 	 <header>
 	 	<div class="[ bg-dark ][ visible-xs ][ relative ]">
-	 		<button class="[ js-mobile-nav-opener ]"><span class="[ icon-menu-1 ][ color-light ]"></span></button>
+	 		<button class="[ js-mobile-nav-opener ]"><span class="[ icon-menu-1 icon-small ][ color-light ]"></span></button>
 			<div class="[ mobile-nav ][ js-mobile-nav ][ width-100 ][ absolute ]">
 				<button class="[ js-mobile-nav-closer ]"><span class="[ icon-close ][ color-dark ]"></span></button>
-				
-				<nav class="[ text-bold ]">
-					<a class="[ text-center text-uppercase ][ block ]" href='index.html'>Inicio</a>
+				<a class="[ text-center text-uppercase ][ pull-right ]" href='index.html'><i class="[ icon-shop icon-small ]"></i></a>
 
-					<a class="[ text-center text-uppercase ][ block ]" href='#'>Pago y Envío</a>
-					<a class="[ text-center text-uppercase ][ block ]" href="#">Contacto</a>
-					<a class="[ text-center text-uppercase ][ block ]" href="#">Quiénes Somos</a>
+				<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]">
+					<input type="text" class="[ form-control ]" placeholder="buscar...">
+					<span class="[ input-group-btn ]">
+						<button class="[ btn btn-primary bg-dark ]" type="button">
+							<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
+						</button>
+					</span>
+				</form><!-- /search -->
+
+				<nav class="[ text-bold ]">
+
+					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href='pago-envio.html'>Pago y Envío</a>
+					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href="contacto.html">Contacto</a>
+					<a class="[ text-center text-uppercase ][ block ][ padding ]" href='about.html'>Quiénes Somos</a>
 					<hr>
 					<div class="[ sub-menu-wrapper ]">
-						<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="#">Hombres</a>
+						<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Tipos</a>
 						<div class="[ sub-menu ]">
-							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="#">Chido hombre</a>
-							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="#">Way hombre</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Hombres</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Mujeres</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Niños</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ][ border-bottom-primary-darken ]" href="categoria.html">Unisex</a>
 						</div>
 					</div>
 					<div class="[ sub-menu-wrapper ]">
-						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ black ]" href="#">Mujeres</a>
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Diseños</a>
 						<div class="[ sub-menu ]">
-							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="#">Chido mujer</a>
-							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="#">Way mujer</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello redondo</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello V</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga Larga</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga corta</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Thank top</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Lavados</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello redondo</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Cuello V</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga Larga</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">manga corta</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Thank top</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Telas</a>
+						<div class="[ sub-menu ]">
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Jersey</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Triblend</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Algodon</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Felpa</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Pique</a>
+							<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ]" href="categoria.html">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ sub-menu-wrapper ]">
+						<a class="[ text-center text-uppercase ][ block ] js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Otros</a>
+						<div class="[ sub-menu ]">
 						</div>
 					</div>
 				</nav>
 
-
-
-				<!-- <strong class="[ block ][ text-center ]" ><a class="[ text-uppercase ]" href='index.html'>Inicio</a></strong>
-				<strong class="[ block ][ text-center ]" ><a class="[ text-uppercase ]" href='#'>Pago y Envío</a></strong>
-				<strong class="[ block ][ text-center ]" ><a class="[ text-uppercase ]" href="#">Contacto</a></strong>
-				<strong class="[ block ][ text-center ]" ><a class="[ text-uppercase ]" href="#">Quiénes Somos</a></strong> -->
 			</div>
+			<a class="[ color-light ][ pull-right ]" href="mi-carrito.html"><span class="[ icon-shopping-cart-4-2 icon-small ]"></span></a>
 	 	</div>
 
+
+		<!-- TOP menu desktop  -->
 	 	<div class="[ bg-dark ][ padding padding--bottom--large-xs ][ hidden-xs ]">
-			
+
 			<div class="[ inline-block ]">
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='index.html'>Inicio</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='#'>Pago y Envío</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="#">Contacto</a>
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="#">Quiénes Somos</a>	
-				<span class="color-light icon-user"></span>		
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='index.html' class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inicio">
+					<i class="[ icon-shop icon-medium ]"></i>
+				</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='pago-envio.html'>Pago y Envío</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="contacto.html">Contacto</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="about.html">Quiénes Somos</a>
 			</div>
 
-			<div class="[ margin-left--large ][ inline-flex ][ input-group ]">
+			<form class="[ inline-flex ][ input-group ][ center-block ][ margin-left--xlarge ]">
 				<input type="text" class="[ form-control ]" placeholder="buscar...">
 				<span class="[ input-group-btn ]">
 					<button class="[ btn btn-primary ]" type="button">
-						<span class="[ relative ][ icon-search ][ color-light ]"></span>
+						<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
 					</button>
 				</span>
-			</div><!-- /input-group -->
+			</form><!-- /search -->
+
+
 
 			<div class="[ pull-right ]">
-				<span class="[ icon-shopping-cart-4-2 ][ color-light ][ padding--bottom ]"></span>
-				<a class="[ text-uppercase ][ color-light ][ hidden-xs ]" href="mi-carrito.html">Mi carrito</a>	
+				<a class="[ text-uppercase ][ color-light ]" href="mi-carrito.html">
+					<span class="[ icon-shopping-cart-4-2  icon-medium  ][ aling-middle ]"></span>
+					<span class="[ padding-top ]">Mi Carrito </span>
+				</a>
 			</div>
 
 	 	</div>
-		
-		<img class="[ img-responsive ][ center-block ][ padding--sides margin-top-bottom ]"src="images/logo.png" alt="">
 
+		<img class="[ img-responsive ][ center-block ][ padding--sides margin-top-bottom ]"src="images/logo.png" alt="">
+		<section class="[ bg-dark ][ hidden-xs ][ text-center ]">
+			<div class="[ container ]">
+				<div class="[ row ]">
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Tipos</span>
+						<div class="[ dropdown-content ]">
+							<a href="">Hombres</a>
+							<a href="">Mujeres</a>
+							<a href="">Niños</a>
+							<a href="">Unisex</a>
+						</div>
+					</div>
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Estilos</span>
+						<div class="[ dropdown-content ]">
+							<a href="">Hombres</a>
+							<a href="">Mujeres</a>
+							<a href="">Niños</a>
+							<a href="">Unisex</a>
+						</div>
+					</div>
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Diseños</span>
+						<div class="[ dropdown-content ]">
+							<a href="">Cuello redondo</a>
+							<a href="">Cuello V</a>
+							<a href="">Manga larga</a>
+							<a href="">Manga corta</a>
+							<a href="">Thank top</a>
+							<a href="">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Lavados</span>
+						<div class="[ dropdown-content ]">
+							<a href="">Cuello redondo</a>
+							<a href="">Cuello V</a>
+							<a href="">Manga larga</a>
+							<a href="">Manga corta</a>
+							<a href="">Thank top</a>
+							<a href="">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Telas</span>
+						<div class="[ dropdown-content ]">
+							<a href="">Jersey</a>
+							<a href="">Tribled</a>
+							<a href="">Algodón</a>
+							<a href="">Felpa</a>
+							<a href="">Pique</a>
+							<a href="">Sudadera</a>
+						</div>
+					</div>
+					<div class="[ dropdown--hover ][ col-sm-2 ]">
+						<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Otros</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	 </header>
 
 	 <div class="[ container ]">
